@@ -1,0 +1,205 @@
+html {
+	font-size: 16px;
+}
+
+h3, .portfolio_title h2, .portfolio_blocks h2 {
+	font-family: "Lobster";
+	font-size: 3em;
+}
+
+p {
+ font-size: 1.25em;
+}
+
+h3, .small, .jumbotron, .portfolio_title h2, .portfolio_blocks h2, .contact {
+	text-align: center;
+}
+
+q:before,q:after{content:'';}
+
+.small {
+	font-size: .8em;
+}
+
+.jumbotron {
+	margin-top: 45px;
+}
+
+.subtitle {
+	font-family: "Lobster";
+	margin-bottom: 15px;
+	font-style: italic;
+}
+
+#CTA {
+	margin-top: 5px;
+}
+
+.quotes{
+	text-align: center;
+	border-bottom: 2px solid #ffffff;
+	padding: 25px 15px 25px 15px;
+	background-color: #3d3d3d;
+	font-size: 1.25em;
+}
+
+.profile, .education, .workex, .contact{
+	border-bottom: 2px solid #ffffff;
+	padding: 0 15px 25px 15px;
+}
+
+.profile img {
+	width: 100%;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.education a:link, .education a:visited,
+.education a:hover, .education a:active,
+.workex a:link, .workex a:visited,
+.workex a:hover, .workex a:active{ 
+	color: #fff;
+	display: block;
+}
+
+.education p, .workex p {
+	font-weight: bold;
+}
+
+.contact_methods {
+	padding-left: 30px;
+}
+
+.contact a {
+	margin: 30px;
+}
+
+.icon {
+	margin-right: 10px;
+}
+
+/* Portfolio Main Page */
+
+.portfolio img {
+	width: 100%;
+	max-height: 400px;
+	padding: 20px;
+}
+
+.hidden_a {
+	text-decoration: none;
+	color: #fff;
+	text-align: left;
+}
+
+/* Main Portfolio Page And Common Themes */
+
+.portfolio_title h2 {
+	padding-bottom: 30px;
+}
+
+.portfolio .row:nth-child(2n+1) {
+	background-color: #3D3D3D;
+}
+
+.portfolio p {
+	font-size: 1.5em;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.portfolio a {
+	display: block;
+}
+
+.portfolio_blocks h3 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2em;
+	text-align: left;
+}
+
+.portfolio_blocks p {
+	padding: 10px;
+}
+
+/* Bunny Breakfast Portfolio Page */
+
+.bunnyb {
+	padding: 10px;  /* Does this class still exist? */
+}
+
+.bunny img{
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+/* UWM Portfolio Page */
+
+.uwm_portfolio img {
+	max-width: 100%;
+	max-height: 500px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.persona {
+	display: block;
+	max-width: 880px;
+	margin: auto;
+}
+
+.cycle2 {
+	max-width: 370px;
+	max-height: 520px;
+	overflow: none;
+	display: block;
+	margin: 10px auto 30px auto;
+}
+
+.center {
+	text-align: center;
+	margin: 10px;
+	font-size: 2em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a, a:visited {text-decoration: underline;}
+
+    a[href]:after {content: " (" attr(href) ")";}
+
+    abbr[title]:after {content: " (" attr(title) ")";}
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {display: table-header-group;}
+
+    tr, img {page-break-inside: avoid;}
+
+    img {max-width: 100% !important;}
+
+    @page {margin: 0.5cm;}
+
+    p, h2, h3 {orphans: 3; widows: 3;}
+
+    h2, h3 {page-break-after: avoid;}
+}

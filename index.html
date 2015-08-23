@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Adam Engstrom - UX Researcher &amp; Web Developer</title>
+		<meta name="description" content="Adam Engstrom - Web developer and UX researcher. Portfolio, blog, and contact." />
+		<meta name="keywords" content="ux, bootstrap, responsive, portfolio, web design" />
+		<meta name="author" content="Adam Engstrom" />
+		<link rel="stylesheet" href="css/bootstrap.darkly.theme.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<?php include_once("analyticstracking.php") ?>
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Adam Engstrom</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#profile">Profile</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#workex">Work Experience</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Portfolio <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="portfolio.html">Portfolio Overview</a></li>
+								<li class="divider"></li>
+								<li><a href="bunnybreakfast.html">Bunny Breakfast</a></li>
+								<li><a href="uwm_ux_for_the_web.html">UWM - UX for the Web</a></li>
+								<li><a href="pigglywiggly.html">Piggly Wiggly Site Review</a></li>
+							</ul>
+						</li>
+						<li><a href="https://medium.com/@CrossroadsUX" target="_self">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		
+		<div class="container-fluid"> 
+			<div class="jumbotron">
+				<div>
+					<h1>Adam Engstrom</h1>
+					<h2 class="subtitle">-UX Researcher &amp; Web Developer-</h2>
+					<a href="portfolio.html" id="profile"><button type="button" class="btn btn-success" id="CTA" onclick="TransitionToPortfolio()">Skip To My Portfolio</button></a>
+				</div>
+			</div>
+
+			<div class="row profile">
+				<div class="col-xs-12">
+					<h3>Profile</h3>
+					<div class="row">
+						<div class="col-sm-2">
+							<div><img src="img/me.jpg" alt="A profile picture of Adam Engstrom."></div>
+						</div>
+						<div class="col-sm-10">
+							<p>Working on Master's in Information (with an emphasis in Human-Computer Interaction) at the University of Michigan.  First Master's in Social and Cultural Psychology from the London School of Economics and a strong passion for UX, CX, SEO, and interaction design. Looking to further develop skills in UX and web development.</p>
+							<p>Strong believer in human-centered and content first design.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row quotes">
+				<div class="col-xs-12">
+					<q id="education">"While good designers treat text as content, the great ones treat text as UI"</q><p>~<a href="http://blog.invisionapp.com/4-tips-on-typography-in-ui-design/?utm_content=14704234&utm_medium=social&utm_source=twitter" target="_self">Chris Bowler</a></p>
+				</div>
+			</div>
+			
+			
+			<div class="row education">
+				<div class="col-xs-12">
+					<h3>Education</h3>
+					<p class="small">Click Each for More Details</p>
+					<div class="accordion">
+						<p><a href="">University of Michigan, Ann Arbor - Master's in Information (Human-Comptuer Interaction Focus) [2017 Expected]</a></p>
+							<ul>
+								<li>FUTURE COURSEWORK: Introduction to Java Programming, Interaction Design, Technology and Accessibility, and more.</li>
+							</ul>
+						<p><a href="">University of Wisconsin, Milwaukee - Dual Certificate in Web Development &amp; Design [2015]</a></p>
+							<ul>
+								<li>HTML, CSS, JavaScript, UX, SEO, Responsive Design, PHP, MySQL</li>
+							</ul>
+						<p><a href="">C2 Graphics - Learning Web Design [2015]</a></p>
+							<ul>
+								<li>HTML, CSS, JavaScript, jQuery, Twitter Bootstrap, HTML Boilerplate, Responsive Design, Fluid Layout, Browser Support</li>
+							</ul>
+						<p><a href="">London School of Economics &amp; Political Science - Master's in Social &amp; Cultural Psychology [2012]</a></p>
+							<ul>
+								<li>Contemporary Social and Cultural Psychology, Qualitative Research Methods, Current Communication Research, Cognition and Culture, Inter-Cultural Relations and Racism</li>
+							</ul>
+						<p><a href="">University of Minnesota, Twin Cities - Bachelor's in General Psychology [2010]</a></p>
+							<ul>
+								<li>Intro to Psych Data Analysis, Learning and Behavior, Personality Psych, Cognitive Psych, Social Psych</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row quotes">
+				<div class="col-xs-12">
+					<q id="workex">"I don't always want my device to save me time.  Sometimes, I want it to make me stop and remember, smile, cry, laugh and be greatful."</q><p>~<a href="https://medium.com/@sudeshnapantham/the-watch-on-my-phone-what-time-means-to-us-2935752a9dd1" target="_self">Sudeshna Pantham</a></p>
+				</div>
+			</div>
+			
+			<div class="row workex">
+				<div class="col-xs-12">
+					<h3>Work Experience</h3>
+					<p class="small">Click Each for More Details</p>
+					<div class="accordion2">
+						<p><a href="">University of Wisconsin Extension - Volunteer Web Master</a></p>
+							<ul>
+								<li>Built and maintain a website for a promotional event (www.bunnybreakfast.org)</li>
+								<li>Manage a Twitter account (@bunnybreakfast) for the event</li>
+							</ul>
+						<p><a href="">Olsen's Piggly Wiggly - Customer Experience Manager</a></p>
+							<ul>
+								<li>Anticipate and remove potential customer pain points</li>
+								<li>Design training materials and worksheets for better usability</li>
+								<li>Point of contact for thousands of customers daily</li>
+								<li>Supervise up to 15 employees and assign tasks</li>
+							</ul>
+						<p><a href="">London School of Economics - SCP Alumni Coordinator</a></p>
+							<ul>
+								<li>Liaise with and coordinate the program specific alumni network</li>
+								<li>Assist with the promotion of ISP alumni events (careers evening, professional updates, submissions for the ISP newsletter, etc.) via their network and the wider program specific community</li>
+							</ul>
+						<p><a href="">London School of Economics - Course and Department Rep.</a></p>
+							<ul>
+								<li>Assessed students’ opinions using data from multiple surveys</li>
+								<li>Developed proposals for the improvement and modification in the education offered to students both within the Institute of Social Psychology and the school as a whole</li>
+							</ul>
+						<p><a href="">COL AmeriCorps - Service-Learning Coordinator</a></p>
+							<ul>
+								<li>Developed programs that combined community service and development with academic curricula</li>
+								<li>Updated and maintained portions of the school’s webpages</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row quotes">
+				<div class="col-xs-12">
+					<q>"Using an arrow to tell users to scroll [is] like using 'click here' on a button that doesn't look like one.  [It's] not Design.  It's not even Art, cause you're explaining it."</q><p>~<a href="#" target="_self">Rodrigo Muniz</a></p>
+				</div>
+			</div>
+
+			<div class="row contact" id="contact">
+				<div class="col-xs-12">
+					<h3>Contact</h3>
+					<p>Contact me through any of the following methods...</p>
+					<div class="contact_methods">
+						<div class="row">
+							<div class="col-md-4">
+								<a href="https://www.linkedin.com/pub/adam-engstrom/32/358/643" target="_self"><p><i class="fa fa-linkedin-square fa-lg icon"></i>LinkedIn</p></a>
+								<a href="mailto:adengstrom87@gmail.com?Subject=I%20saw%20your%20Website,%20and%20I%20Wanted%20to%20say%20Hi!" target="_top"><p><i class="fa fa-envelope-o fa-lg icon"></i>Email</p></a>
+							</div>
+							<div class="col-md-4">
+								<a href="https://www.twitter.com/crossroadsux" target="_self"><p><i class="fa fa-twitter fa-lg icon"></i>Twitter</p></a>
+								<a href="https://medium.com/@CrossroadsUX" target="_self"><p><i class="fa fa-medium fa-lg icon"></i>Medium</p></a>
+							</div>
+							<div class="col-md-4">
+								<a href="https://github.com/adamengstrom" target="_self"><p><i class="fa fa-github fa-lg icon"></i>Github</p></a>
+								<a href="https://plus.google.com/109771873796163313489/posts" target="_self"><p><i class="fa fa-google-plus fa-lg icon"></i>Google+</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div><!-- /container -->
+	</body>		
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function($) {
+			var myPanels = $('.accordion > ul').hide();
+			$('.accordion > p > a').click(function() {
+				myPanels.slideUp();
+				$(this).parent().next().slideDown();
+				return false;
+			});
+			var myPanels2 = $('.accordion2 > ul').hide();
+			$('.accordion2 > p > a').click(function() {
+				myPanels2.slideUp();
+				$(this).parent().next().slideDown();
+				return false;
+			});
+		});
+	</script>
+</html>
