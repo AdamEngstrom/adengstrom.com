@@ -43,7 +43,7 @@ q:before,q:after{content:'';}
 	font-size: 1.25em;
 }
 
-.profile, .education, .workex, .contact{
+.profile, .portfolio, .education, .workex, .contact{
 	border-bottom: 2px solid #ffffff;
 	padding: 0 15px 25px 15px;
 }
@@ -82,7 +82,7 @@ q:before,q:after{content:'';}
 
 .portfolio img {
 	width: 100%;
-	max-height: 400px;
+	max-height: 215px;
 	padding: 20px;
 }
 
